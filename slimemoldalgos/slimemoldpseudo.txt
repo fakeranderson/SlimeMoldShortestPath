@@ -1,0 +1,58 @@
+//inputs are currentLocation of slimemold, a bool array of food locations, and an empty shortestPaths array
+
+void slimePath(currentLocation, bool w[][], shortestPaths[][]) {
+
+list promisingPaths
+index foodLocation
+int n = size of w[][]
+bool foodIsFound
+
+//main while loop
+while(w[][] contains more than 0 trues) {
+
+//find a path to a specific food location, choosing a random path through i and j indices
+for(i -> n)
+ {
+    for(j -> n)
+	{
+	
+	  if(currentLocation contains a true)
+	  {
+	  //store the path that was taken
+	  add path to promisingPaths
+
+	  //store the w index of the true
+	  foodLocation = index of w
+	  }
+	
+	}
+ }
+//slime mold will make several random paths to the previously discovered food source, and only keep the shortest of those paths
+for(arbitrary number of paths to make)
+{ 
+for(i -> n) //i and j are again randomly chosen
+ {
+   for(j -> n)
+	{
+	  if(iterator[i][j] = foodlocation
+	  {
+	   //store the path that was taken
+	   add path to promisingPaths
+	  }
+	}
+ }
+}
+
+//a slime mold will let the other paths die, keeping only the shortest that it found
+iterate through promisingPaths, store only the shortest path in its appropriate index in shortestPaths[][]
+//the value stored in shortestPaths[][] represents the shortest path from the currentLocation to the foodLocation
+
+//eat the food
+w[foodlocation] = false
+
+//move currentLocation because now we need to find a new source of food
+currentLocation = foodlocation
+
+}//end of main while loop
+
+}//end of algorithm
